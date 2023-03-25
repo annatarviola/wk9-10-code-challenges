@@ -1,4 +1,4 @@
-const arr = [2, 4, 0, 100, 4, 11, 2602, 36]
+const arr = [160, 3, 1719, 19, 11, 13, -21]
 
 function checkForOutlier(arr) {
     evens = 0
@@ -17,9 +17,7 @@ function checkForOutlier(arr) {
                 return arr[i]
             }
         }
-    }
-
-    if (odds === 1) {
+    } else {
         for (i = 0; i < arr.length; i++) {
             if (arr[i] % 2 !== 0) {
                 return arr[i]
